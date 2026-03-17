@@ -15,48 +15,79 @@ body {
 }
 
 .overlay {
-    background: rgba(0,0,0,0.20);
+    background: rgba(0,0,0,0.6);
     min-height: 100vh;
-    padding: 20px;
+    padding: 30px 15px;
 }
 
+/* LOGO */
 .logo {
-    width: 120px;
-    margin-top: 20px;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-.button {
+    width: 160px;
+    margin: 10px auto;
     display: block;
-    width: 90%;
-    margin: 12px auto;
-    padding: 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
 }
 
+/* TEXT */
+h1 {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* BUTTON CONTAINER */
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* BUTTON STYLE */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* COLORS */
 .whatsapp {
-    background: linear-gradient(45deg, #25D366, #1ebe5d);
+    background: #25D366;
 }
 
 .email {
-    background: linear-gradient(45deg, #007BFF, #0056b3);
+    background: #007BFF;
 }
 
 .review {
-    background: linear-gradient(45deg, orange, red);
+    background: #ff7a00;
 }
 
+/* ICONS */
+.icon {
+    width: 20px;
+}
+
+/* MAP */
 .map {
-    width: 95%;
+    width: 100%;
     height: 250px;
     border-radius: 10px;
     margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    color: #aaa;
 }
 </style>
 </head>
@@ -70,18 +101,36 @@ h1 {
     <h1>DROPFIX LIMITED</h1>
     <p>Smartphone Repair Experts</p>
 
-    <a class="button whatsapp" href="https://wa.me/447550722762">📱 Ali Asghar</a>
-    <a class="button whatsapp" href="https://wa.me/447440172501">📱 Malik Usman</a>
+    <div class="container">
 
-    <a class="button email" href="mailto:DROPFIXLIMITED@GMAIL.COM">📧 Email Us</a>
+        <a class="button whatsapp" href="https://wa.me/447550722762">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png"/>
+            Ali Asghar
+        </a>
 
-    <a class="button review" href="https://maps.app.goo.gl/syqt7nDaxvzTeAiS8?g_st=iw">⭐ Leave a Review</a>
+        <a class="button whatsapp" href="https://wa.me/447440172501">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png"/>
+            Malik Usman
+        </a>
 
-    <iframe class="map"
-    src="https://www.google.com/maps?q=Romford UK&output=embed">
-    </iframe>
+        <a class="button email" href="mailto:DROPFIXLIMITED@GMAIL.COM">
+            <img class="icon" src="https://img.icons8.com/ios-filled/50/ffffff/email.png"/>
+            Email Us
+        </a>
 
-    <p>© DropFix Limited</p>
+        <a class="button review" href="https://maps.app.goo.gl/syqt7nDaxvzTeAiS8?g_st=iw">
+            ⭐ Leave a Review
+        </a>
+
+        <iframe class="map"
+        src="https://www.google.com/maps?q=Walthamstow London&output=embed">
+        </iframe>
+
+    </div>
+
+    <footer>
+        © DropFix Limited
+    </footer>
 
 </div>
 
